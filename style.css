@@ -64,8 +64,70 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+.Catalog {
+  padding: 2rem;
+  text-align: center;
+  background-color: #dbe7f1;
 
+}
+.Catalog h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color:  #006064;
+}
+.Catalog .images{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background-color: #dde1f2;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-position: center;
+}
+
+.card h4 {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+  color: #006064;
+}
+
+.card p {
+  font-size: 0.95rem;
+  padding: 0 1rem 1rem;
+  color: #444;
+}
+
+footer {
+  background-color: #dfecfc;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
 @media (max-width: 768px) {
+  .Catalog .images img {
+    width: 100%;
+    height: auto;
+  }
+
+
   .container {
     flex-direction: column;
     padding: 20px;
